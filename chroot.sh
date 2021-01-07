@@ -242,7 +242,7 @@ echo 'Server = http://repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
 pacman -Syy archlinuxcn-keyring --noconfirm
 clear
 
-echo " Установка KDE и набора программ "
+echo " Установка XFCE и набора программ "
 
 # Последний вариант
 
