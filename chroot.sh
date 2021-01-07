@@ -326,13 +326,15 @@ echo " Установка XFCE и набора программ "
 
 # Последний вариант
 
-pacman -Sy plasma kde-system-meta kio-extras konsole yakuake htop dkms --noconfirm
+pacman -S  xfce4 pavucontrol xfce4-goodies  --noconfirm
 
-pacman -S alsa-utils ark aspell aspell-en aspell-ru audacious audacious-plugins bat bind bleachbit --noconfirm
+pacman -S arc-gtk-theme papirus-icon-theme alsa-utils aspell aspell-en aspell-ru audacious audacious-plugins bat bind bleachbit --noconfirm
 
-pacman -S firefox-i18n-ru firefox-ublock-origin dnsmasq dolphin-plugins downgrade fd filelight findutils fish fzf git --noconfirm
+pacman -S firefox-i18n-ru firefox-ublock-origin dnsmasq downgrade fd filelight findutils fish fzf git --noconfirm
 
-pacman -S gnome-calculator grsync gtk-engine-murrine telegram-desktop gvfs gwenview haveged highlight kfind --noconfirm
+pacman -S gnome-calculator grsync gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-goa gvfs-gphoto2 --noconfirm
+
+pacman -S gvfs-mtp gvfs-nfs gvfs-smb gvfs-google haveged highlight kfind --noconfirm
 
 pacman -S lib32-alsa-plugins lib32-freetype2 lib32-glu lib32-libcurl-gnutls lib32-libpulse lib32-libxft --noconfirm
 
@@ -340,11 +342,9 @@ pacman -S lib32-libxinerama lib32-libxrandr lib32-openal lib32-openssl-1.0 lib32
 
 pacman -S nano-syntax-highlighting neofetch noto-fonts-emoji pamac-aur perl-image-exiftool --noconfirm
 
-pacman -S partitionmanager pcmanfm pkgfile p7zip pulseaudio-alsa python-pip python-virtualenv --noconfirm
+pacman -S flameshot gparted pkgfile p7zip pulseaudio-alsa python-pip python-virtualenv --noconfirm
 
-pacman -S pamac-aur qbittorrent plasma5-applets-weather-widget qt5-xmlpatterns systemd-kcm --noconfirm
-
-pacman -S sddm-kcm smplayer smplayer-themes sox spectacle terminus-font timeshift --noconfirm
+pacman -S qbittorrent smplayer smplayer-themes sox terminus-font timeshift --noconfirm
 
 pacman -S ttf-arphic-ukai ttf-arphic-uming ttf-caladea ttf-carlito ttf-croscore ttf-dejavu --noconfirm
 
@@ -382,14 +382,11 @@ echo "exec startxfce4 " >> /home/$username/.xinitrc
 echo ' [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx ' >> /etc/profile
 echo ""
 echo "Xfce успешно установлена"
-echo "Установка sddm "
-pacman -S sddm sddm-kcm --noconfirm
-systemctl enable sddm.service -f
-echo "[General]" >> /etc/sddm.conf
-echo "..." >> /etc/sddm.conf
-echo "Numlock=on" >> /etc/sddm.conf
+echo "Установка lightdm "
+pacman -S lightdm lightdm-gtk-greeter-settings lightdm-gtk-greeter --noconfirm
+systemctl enable lightdm.service -f
 clear
-echo " установка sddm  завершена "
+echo " установка lightdm завершена "
 pacman -Sy networkmanager networkmanager-openvpn network-manager-applet --noconfirm
 systemctl enable NetworkManager.service
 clear
