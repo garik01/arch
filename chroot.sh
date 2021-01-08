@@ -414,7 +414,7 @@ clear
 pacman -S zsh  zsh-syntax-highlighting zsh-autosuggestions grml-zsh-config --noconfirm
 echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> /etc/zsh/zshrc
 echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> /etc/zsh/zshrc
-clear
+
 chsh -s /bin/zsh
 chsh -s /bin/zsh $username
 clear
@@ -422,7 +422,7 @@ echo " При первом запуске консоли(терминала) н�
 echo " Оболочка изменена с bash на zsh "
 elif [[ $x_shell == 2 ]]; then
 pacman -S fish
-clear
+
 chsh -s /bin/fish
 chsh -s /bin/fish $username
 clear
