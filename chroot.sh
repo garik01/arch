@@ -326,7 +326,7 @@ echo " Установка XFCE и набора программ "
 
 # Последний вариант
 
-pacman -S  xfce4 pavucontrol xfce4-goodies  --noconfirm
+pacman -S  xfce4 pavucontrol xfce4-goodies --noconfirm
 
 pacman -S arc-gtk-theme papirus-icon-theme alsa-utils aspell aspell-en aspell-ru audacious audacious-plugins bat bind bleachbit --noconfirm
 
@@ -344,7 +344,7 @@ pacman -S nano-syntax-highlighting neofetch noto-fonts-emoji pamac-aur perl-imag
 
 pacman -S flameshot gparted pkgfile p7zip pulseaudio-alsa python-pip python-virtualenv --noconfirm
 
-pacman -S qbittorrent smplayer smplayer-themes sox terminus-font timeshift --noconfirm
+pacman -S qbittorrent smplayer smplayer-themes sox terminus-font timeshift inxi --noconfirm
 
 pacman -S ttf-arphic-ukai ttf-arphic-uming ttf-caladea ttf-carlito ttf-croscore ttf-dejavu --noconfirm
 
