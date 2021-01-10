@@ -328,11 +328,11 @@ echo " Установка XFCE и набора программ "
 
 pacman -S  xfce4 pavucontrol xfce4-goodies --noconfirm
 
-pacman -S arc-gtk-theme papirus-icon-theme alsa-utils aspell aspell-en aspell-ru audacious audacious-plugins bat bind bleachbit --noconfirm
+pacman -S arc-gtk-theme papirus-icon-theme alsa-utils aspell aspell-en aspell-ru audacious audacious-plugins bat --noconfirm
 
-pacman -S firefox-i18n-ru firefox-ublock-origin dnsmasq downgrade fd filelight findutils fish fzf git --noconfirm
+pacman -S bind bleachbit firefox-i18n-ru firefox-ublock-origin dnsmasq downgrade fd filelight findutils fzf git --noconfirm
 
-pacman -S gnome-calculator grsync gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-goa gvfs-gphoto2 --noconfirm
+pacman -S gnome-calculator gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-goa gvfs-gphoto2 --noconfirm
 
 pacman -S gvfs-mtp gvfs-nfs gvfs-smb gvfs-google haveged highlight kfind --noconfirm
 
@@ -344,7 +344,7 @@ pacman -S nano-syntax-highlighting neofetch noto-fonts-emoji pamac-aur perl-imag
 
 pacman -S flameshot gparted pkgfile p7zip pulseaudio-alsa python-pip python-virtualenv --noconfirm
 
-pacman -S qbittorrent smplayer smplayer-themes sox terminus-font timeshift inxi --noconfirm
+pacman -S qbittorrent smplayer smplayer-themes terminus-font timeshift inxi --noconfirm
 
 pacman -S ttf-arphic-ukai ttf-arphic-uming ttf-caladea ttf-carlito ttf-croscore ttf-dejavu --noconfirm
 
