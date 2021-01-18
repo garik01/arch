@@ -330,11 +330,11 @@ pacman -S  xfce4 pavucontrol xfce4-goodies --noconfirm
 
 pacman -S arc-gtk-theme papirus-icon-theme alsa-utils aspell aspell-en aspell-ru audacious audacious-plugins bat --noconfirm
 
-pacman -S bind bleachbit firefox-i18n-ru firefox-ublock-origin dnsmasq downgrade fd filelight findutils fzf git --noconfirm
+pacman -S bind bleachbit firefox-i18n-ru dnsmasq downgrade fd findutils fzf git --noconfirm
 
-pacman -S gnome-calculator gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-goa gvfs-gphoto2 --noconfirm
+pacman -S gnome-calculator gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-gphoto2 --noconfirm
 
-pacman -S gvfs-mtp gvfs-nfs gvfs-smb gvfs-google haveged highlight kfind --noconfirm
+pacman -S gvfs-mtp haveged highlight kfind --noconfirm
 
 pacman -S lib32-alsa-plugins lib32-freetype2 lib32-glu lib32-libcurl-gnutls lib32-libpulse lib32-libxft --noconfirm
 
