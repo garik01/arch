@@ -396,7 +396,7 @@ do
 done
 if [[ $int == 1 ]]; then
 
-  curl -LO https://raw.githubusercontent.com/alexgantera/arch/master/chroot.sh
+  curl -LO https://raw.githubusercontent.com/garik01/arch/master/chroot.sh
   mv chroot.sh /mnt
   chmod +x /mnt/chroot.sh
 
@@ -410,7 +410,7 @@ echo "################################################################"
 umount -a
 reboot
   elif [[ $int == 2 ]]; then
-  arch-chroot /mnt sh -c "$(curl -fsSL https://raw.githubusercontent.com/alexgantera/arch/master/chroot.sh)"
+  arch-chroot /mnt sh -c "$(curl -fsSL https://raw.githubusercontent.com/garik01/arch/master/chroot.sh)"
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"
@@ -700,7 +700,7 @@ do
 done
 if [[ $int == 1 ]]; then
 
-  curl -LO https://raw.githubusercontent.com/alexgantera/arch/master/chroot.sh
+  curl -LO https://raw.githubusercontent.com/garik01/arch/master/chroot.sh
   mv chroot.sh /mnt
   chmod +x /mnt/chroot.sh
 
@@ -714,7 +714,7 @@ echo "################################################################"
 umount -a
 reboot
   elif [[ $int == 2 ]]; then
-  arch-chroot /mnt sh -c "$(curl -fsSL https://raw.githubusercontent.com/alexgantera/arch/master/chroot.sh)"
+  arch-chroot /mnt sh -c "$(curl -fsSL https://raw.githubusercontent.com/garik01/arch/master/chroot.sh)"
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"
