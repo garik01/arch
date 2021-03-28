@@ -1,7 +1,7 @@
 # arch
 Установка Arch Linux KDE:
 
-curl -OL https://git.io/arch-kde
+curl -OL https://git.io/JYnLL
 
 chmod +x arch-kde
 
