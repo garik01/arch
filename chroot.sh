@@ -329,32 +329,32 @@ echo " "
 
 # Последний вариант
 
-pacman -Sy plasma kde-system-meta kio-extras konsole yakuake htop dkms --noconfirm
+pacman -Sy plasma kde-system-meta kio-extras konsole yakuake htop --noconfirm
 
-pacman -S alsa-utils ark aspell aspell-en aspell-ru audacious audacious-plugins bat bind bleachbit --noconfirm
+pacman -S alsa-utils ark aspell aspell-en aspell-ru audacious audacious-plugins bind --noconfirm
 
-pacman -S firefox-i18n-ru dnsmasq dolphin-plugins downgrade fd filelight findutils fzf git --noconfirm
+pacman -S firefox-i18n-ru dnsmasq dolphin-plugins downgrade findutils --noconfirm
 
 pacman -S gnome-calculator gtk-engine-murrine telegram-desktop gvfs gvfs-afc gvfs-mtp gvfs-gphoto2 --noconfirm
 
-pacman -S gwenview haveged highlight kfind lib32-alsa-plugins lib32-freetype2 lib32-glu lib32-libcurl-gnutls --noconfirm
+pacman -S gwenview kfind lib32-alsa-plugins lib32-freetype2 lib32-glu lib32-libcurl-gnutls --noconfirm
 
 pacman -S lib32-libpulse lib32-libxft lib32-libxinerama lib32-libxrandr lib32-openal lib32-openssl-1.0 --noconfirm
 
-pacman -S lib32-sdl2_mixer ntfs-3g nano-syntax-highlighting neofetch noto-fonts-emoji okular perl-image-exiftool --noconfirm
+pacman -S lib32-sdl2_mixer ntfs-3g okular --noconfirm
 
 pacman -S partitionmanager pcmanfm pkgfile p7zip pulseaudio-alsa --noconfirm
 
-pacman -S pamac-aur qbittorrent plasma5-applets-weather-widget qt5-xmlpatterns systemd-kcm --noconfirm
+pacman -S qbittorrent systemd-kcm --noconfirm
 
-pacman -S kate smplayer smplayer-themes spectacle terminus-font timeshift --noconfirm
+pacman -S kate spectacle terminus-font timeshift --noconfirm
 
 pacman -S ttf-arphic-ukai ttf-arphic-uming ttf-caladea ttf-carlito ttf-croscore ttf-dejavu --noconfirm
 
-pacman -S ttf-liberation ttf-sazanami unrar xclip xorg-xrandr zim yay youtube-dl starship --noconfirm
+pacman -S ttf-liberation unrar xorg-xrandr yay --noconfirm
 
 
-pacman -Rns discover plasma-thunderbolt bolt --noconfirm
+pacman -Rns discover --noconfirm
 
 echo "Для отображения иконки Pamac в трее нужно будет установить пакет pamac-tray-icon-plasma "
 
